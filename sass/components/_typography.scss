@@ -1,0 +1,103 @@
+@use "../helpers/mixins"as*;
+@use"../helpers/variables" as*;
+heading-section{
+    h2{
+        text-align: center;
+        color: $dark-color;
+    }
+    >p{
+        font-size: 20px;
+        padding-bottom: 30px;
+        font-weight: bold;
+        position: relative;
+        margin-bottom: 20px;
+        &::after{
+            content: " ";
+            @include centering-position;
+            top: 80%;
+            width: 90px;
+            height: 2px;
+            background-color:$dgold-color;
+        }
+    }
+}
+label{
+    color: $dark-color;
+    font-size: 18px;
+    padding: 10px;
+}
+input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+.open {
+    right:-1px !important;
+}
+.d-open{
+    display: block !important ;
+}
+.d-hide{
+    display: none !important;
+}
+.success{
+    input {
+    border-color: #09c372 !important;
+    }
+}
+.error {
+    input {
+    border-color: #ff3860 !important;
+    }
+}
+.error-place{
+    color: #ff3860;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    height: 1px;
+}
+
+@keyframes leftToRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes TopToBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+    transform: translateX(100%);
+    opacity: 0;
+    }
+    100% {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}

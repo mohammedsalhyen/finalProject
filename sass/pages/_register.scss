@@ -1,0 +1,84 @@
+@use "../components/components.scss" as*;
+@use "../helpers/index" as*;
+/* Start REGISTER PAGE#####################################*/
+/* #####################################*/
+/*#######################*/
+.registration-form{
+    margin: 125px auto;
+    h1 {
+        font-size: 24px;
+        font-weight: 800;
+        color:#FFF;
+        padding: 30px;
+        background-image: linear-gradient(to bottom right,$dark-color 30% , $main-color);
+        margin: auto;
+    }
+    form{
+        background-color:$white-color;
+        padding: 30px;
+        box-shadow:3px 2px 22px #b9b7b7 inset;
+        label {
+            color: $dark-color;
+            font-size: 18px;
+            padding: 10px;
+        }
+        input,
+        [id="gender"],
+        [id="blood-type"],
+        [id="state"]{
+            padding: 10px;
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid #DDD;
+        }
+        input:focus,
+        [id="address"],        
+        [id="orgAddress"]{
+            outline: none;
+        }
+        [id="address"],
+        [id="orgAddress"]{
+            padding: 10px;
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid #DDD;
+            height: 100%;
+        }
+        .btn-div{
+            width: 100%;
+        }
+        [type="submit"]{
+            background-color: #fff;
+            color: $dark-color;
+            border: none;
+            box-shadow: 5px 8px 33px #a4a0a0;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 50px ;
+            font-size: 18px;
+            font-weight: bold;
+            width: fit-content;
+            i{
+                margin-left: 0;
+                &:hover{
+                    color: #fff;
+                    background-color: $dark-color;
+                }
+            } 
+        }
+        @media (max-width:991px) {
+            [id="last-name"],
+            [id="repeated-password"],
+            [id="last-donation-year"]{
+                margin-top: 20px;
+            }
+            textarea{
+                flex-direction: column;
+                height: 320px;
+            }
+        }
+    }
+}
+/* End REGISTER PAGE#####################################*/
+/* #####################################*/
+/*#######################*/

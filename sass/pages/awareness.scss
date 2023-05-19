@@ -1,0 +1,30 @@
+@use "../components/components.scss" as*;
+@use "../helpers/index" as*;
+
+/* Start AWARENES PAGE#####################################*/
+/* #####################################*/
+/*#######################*/
+.awareness-article{
+    h1{
+        padding: 10px;
+        color: $dark-color;
+    }
+    p{
+        padding: 10px;
+        line-height: 1.8;
+        font-size: 20px;
+    }
+    .btn-container{
+        input{
+            border-radius: 10px;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            background-color: $dark-color;
+            color: $white-color;
+        }
+    }
+}
+/* End AWARENES PAGE#####################################*/
+/* #####################################*/
+/*#######################*/

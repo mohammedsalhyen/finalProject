@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Drops Of Life</title>
+        <!--Css style-->
+        <link rel="stylesheet" href="./sass/pages/pages.css">
+        <!-- link of bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!-- Font Awesome Library -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!--Font family-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Golos+Text&family=Noto+Sans+JP&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="page d-flex">
+            <!--Start slidebar-->
+            <div class="slidebar ">
+                <a class="logo" href="./index.html"><img src="./image/logo.png" alt="logo"></a>
+                <div class=" links ">
+                    <ul >
+                        <li>
+                            <a class="active"href="./index.html">
+                                <i class="fa-solid  fa-house"></i>
+                                <p>Home</p> 
+                            </a>
+                        </li>
+                        <li>
+                            <a  href="./profile.html">
+                                <i class="fa-solid fa-user"></i>
+                                <p>Profile</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a  href="./index.html">
+                                <i class="center-i fa-solid fa-hand"></i>
+                                <p>About Us</p> 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./findBlood.html">
+                                <i class="fa-solid fa-signs-post"></i>
+                                <p>Find Blood</p>
+                            </a>
+                        </li>
+
+                        <li class="register-link position-relative">
+                            
+                            <a href="#">
+                                <i class="fa-solid fa-registered"></i>
+                                <p>Rsgister Now </p>
+                                <i class="fa-solid fa-chevron-down fa-bounce"></i>
+                                </i>
+                            </a>
+                            <ul>
+                                <li class="donor">
+                                    <i class="fa-solid fa-user"></i>
+                                    Register as Donor
+                                </li>
+                                <li class="organization">
+                                    <i class="fa-solid fa-building"></i>
+                                    Register as Organization
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--End slidebar-->
+            <!--Start content-->
+            <div class="content">
+                <div class="heading-area">
+                    <div class="heading-group">
+                        <div class="search-input">
+                            <i class="fa-solid fa-search"></i>
+                            <input type="text" id="search" placeholder="Type the name">
+                        </div>
+                    </div>
+                    <div class="heading-group">
+                        <a href="#"><i class="fa-solid fa-bell"></i></a>
+                        <img src="./image/man.png" alt="man">
+                    </div>
+                </div>
+                <div class="container dashboard-container d-flex flex-lg-row flex-md-column flex-sm-column">
+                    <div class="col-lg-8 col-md-12 col-sm-12 left-content">
+                        <h2>Services</h2>
+                        <div class="search-heading-content">
+                            <div class="saerch-content">
+                                <i class="fa-solid fa-search"></i>
+                                <input type="text" id="user-id" placeholder="User ID">
+                            </div>
+                            <div class="select-drop-down">
+                                <select name="user-type" id="user-type">
+                                    <option value="">--Select user type--</option>
+                                    <option value="normal-user">Normal user</option>
+                                    <option value="normal-user">Call Center</option>
+                                    <option value="organization">Organization</option>
+                                </select>
+                            </div>
+                            <div class="search-btn">
+                                <button>Search</button>
+                            </div>
+                        </div>
+                        <div class="admin-services-container">
+                            <div class="admin-service add-user">
+                                <div class="admin-service-title">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                    <div class="admin-service-text">
+                                        <h5>Add User</h5>
+                                        <span class="text-black-50">Create new one</span>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <span>Go to service</span>
+                                    <span class="icon-button">
+                                        <i class="fa-solid fa-greater-than"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="admin-service delete-user">
+                                <div class="admin-service-title">
+                                    <i class="fa-solid fa-user-xmark"></i>
+                                    <div class="admin-service-text">
+                                        <h5>Delete User</h5>
+                                        <span class="text-black-50" >Remove current one</span>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <span>Go to service</span>
+                                    <span class="icon-button">
+                                        <i class="fa-solid fa-greater-than"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="admin-service create-request">
+                                <div class="admin-service-title">
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                    <div class="admin-service-text">
+                                        <h5>Create Request </h5>
+                                        <span class="text-black-50">Need more blood</span>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <span>Go to service</span>
+                                    <span class="icon-button">
+                                        <i class="fa-solid fa-greater-than"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="last-users">
+                            <div class="last-users-title">
+                                <div class="last-users-head">
+                                    <h2>Latest User</h2>
+                                    <p class="text-black-50">filter selected:<span>last Two weeks</span></p>
+                                </div>
+                                <div class="last-users-icons d-flex">
+                                    <button class="icon-button">
+                                        <i class="fa-solid fa-filter"></i>
+                                    </button>
+                                    <button class="icon-button">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="user-info-container">
+                                <div class="user-info">
+                                    <div class="user-info-head">
+                                        <img src="./image/man.png" alt="man">
+                                        <div class="user-info-text">
+                                        <h5>Mohammed Salhyen </h5>
+                                        <p>Name</p>
+                                        </div>
+                                    </div>
+                                    <div class="user-info-Id">
+                                        <h5>4694</h5>
+                                        <p>Last 4 digits</p>
+                                    </div>
+                                    <div class="user-info-date">
+                                        <h5>16,oct,2023</h5>
+                                        <p>Register Date</p>
+                                    </div>
+                                    <div class="user-info-blood">
+                                        <h5>A+</h5>
+                                        <p>Blood Group </p>
+                                    </div>
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-info-head">
+                                        <img src="./image/man.png" alt="man">
+                                        <div class="user-info-text">
+                                            <h5>Hamza Gomaa</h5>
+                                            <p>Name</p>
+                                        </div>
+                                    </div>
+                                    <div class="user-info-Id">
+                                        <h5>5298</h5>
+                                        <p>Last 4 digits</p>
+                                    </div>
+                                    <div class="user-info-date">
+                                        <h5>16,jun,2022</h5>
+                                        <p>Register Date</p>
+                                    </div>
+                                    <div class="user-info-blood">
+                                        <h5>B+</h5>
+                                        <p>Blood Group </p>
+                                    </div>
+                                </div>
+                                <div class="user-info">
+                                    <div class="user-info-head">
+                                        <img src="./image/man.png" alt="man">
+                                        <div class="user-info-text">
+                                            <h5>Taha saleh</h5>
+                                            <p>Name</p>
+                                        </div>
+                                    </div>
+                                    <div class="user-info-Id">
+                                        <h5>8792</h5>
+                                        <p>Last 4 digits</p>
+                                    </div>
+                                    <div class="user-info-date">
+                                        <h5>4,oct,2021</h5>
+                                        <p>Register Date</p>
+                                    </div>
+                                    <div class="user-info-blood">
+                                        <h5>O-</h5>
+                                        <p>Blood Group </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 right-content">
+                        <div class="admin-info">
+                            <h3>My Information</h3>
+                            <ul>
+                                <li class="d-flex justify-content-between">
+                                    <p>Full name</p>
+                                    <span>Mohammed Salhyen sherief</span>
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <p>Email</p>
+                                    <span>mohammedsalhyen5@gmail.com</span>
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <p>Phone</p>
+                                    <span>01110948994</span>
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <p>Address</p>
+                                    <span>Elminia-samalout</span>
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <p>Gender</p>
+                                    <span>Male</span>
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <p> National ID</p>
+                                    <span>30002012404694</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="feedbacks">
+                            <h4>Latest Feedback</h4>
+                            <div class="feedbacks-box">
+                                <div class="feedbacks-title">
+                                    <img src="./image/man.png" alt="man">
+                                    <div class="all-services-text">
+                                        <h5>mosalm adam</h5>
+                                        <span class="text-black-50">very good</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="feedbacks-box">
+                                <div class="feedbacks-title">
+                                    <img src="./image/man.png" alt="man">
+                                    <div class="all-services-text">
+                                        <h5>Fady Ahmed</h5>
+                                        <span class="text-black-50">it produce a good experience</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="feedbacks-box">
+                                <div class="feedbacks-title">
+                                    <img src="./image/man.png" alt="man">
+                                    <div class="all-services-text">
+                                        <h5>Ali Mahmoud</h5>
+                                        <span class="text-black-50">nice app</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./js/master.js"></script>
+    </body>
+</html>
+

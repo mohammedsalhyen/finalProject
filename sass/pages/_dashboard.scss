@@ -1,0 +1,251 @@
+@use "../components/components.scss" as*;
+@use "../helpers/index" as*;
+/* Start DASHBOARD PAGE#####################################*/
+/* #####################################*/
+/*#######################*/
+.dashboard-container{
+    margin-top: 65px;
+    @include breakpoint(sm){flex-direction:column ;}
+    @include breakpoint(xs){flex-direction:column ;}
+}
+.left-content{
+    padding:30px 10px 10px 10px ; 
+    .search-heading-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include breakpoint(sm){flex-direction:column ;}
+        @include breakpoint(xs){flex-direction:column ;}
+        .saerch-content{
+            flex:1;
+            border-bottom: 1px solid $dark-color;
+            margin-right: 20px;
+            @include breakpoint(sm){margin-bottom: 10px;}
+            @include breakpoint(xs){margin-bottom: 10px;}
+            input{
+                border:none;
+                border-radius: 0;
+                max-width: 50%;
+            }
+        }
+        .select-drop-down{
+            flex: 1;
+            margin-right: 40px;
+            border-bottom: 1px solid $dark-color;
+            @include breakpoint(sm){margin-bottom: 10px;}
+            @include breakpoint(xs){margin-bottom: 10px;}
+            select{
+                width: 100%;
+                padding: 10px;
+                background-color: inherit;
+                border: none;
+                margin-right: 20px;
+            }
+        }
+        .search-btn{
+            flex: 0.5;
+            button{
+                background: #bbb;
+                width: 100%;
+                border-radius: 10px; 
+                border: 3px solid #FFF;
+                box-shadow: 10px 10px 10px #ababab inset;               
+                padding: 10px 15px;
+                transition: 0.25s ease;
+                cursor: pointer;
+                &:hover,
+                &:focus {
+                    border: 3px solid #828282;
+                }
+            }
+        }
+    }
+    .admin-services-container{
+        display: flex;
+        justify-content: space-between;
+        padding:20px 0;
+        @include breakpoint(sm){flex-direction: column; align-items: center;}
+        @include breakpoint(xs){flex-direction: column; align-items: center;}
+        .admin-service{
+            background-color: #DDD;
+            width: 250px;
+            height: 200px;
+            padding: 10px 30px;
+            border-radius: 10px;
+            border:none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: 0.5s ease;
+            @include breakpoint(sm){margin-bottom: 20px;}
+            @include breakpoint(xs){margin-bottom: 20px;}
+            cursor: pointer;
+            &:hover{
+                transform: translateY(-10px);
+            }
+            .admin-service-title{
+                display: flex;
+                flex-direction: row;
+                i{
+                    font-size: 28px;
+                    margin:20px 10px 0 0;
+                }
+                h5{
+                    margin-top: 10px;
+                    font-size: 18px;
+                }
+            }
+            a{
+                text-decoration: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color:$dark-color;
+                font-size: 18px;
+                i{
+                    border:1px solid $dark-color;
+                    width:40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                }
+            }
+        }
+        .add-user{
+            background-color:#198754 ;
+        }
+        .delete-user{
+            background-color:#ffc720 ;
+        }
+        .create-request{
+            background-color:#25cff2;
+        }
+    }
+    .last-users{
+        margin-top: 30px;
+        .last-users-title{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid $dark-color;
+            .last-users-head{
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                h2{
+                    padding-right: 20px;
+                    border-right: 1px solid $dark-color;
+                    font-size: 26px;
+                }
+                p{
+                    padding-left: 20px;
+                    font-weight: 500;
+                    font-size: 18px;
+                    @include breakpoint(sm){display: none;}
+                    @include breakpoint(xs) {display: none;}
+                }
+            }
+            
+            .icon-button{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: #FFF;
+                border:none;
+                margin: 5px;
+                transition: 3s ease;
+                @include centering-flex;
+                &:hover{
+                    border:1px solid $dark-color;
+                    i{
+                        background-color: #b7b7b7b3;
+                    }
+                }
+                i{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background-color: #FFF;
+                    border:1px solid $dark-color;
+                    @include centering-flex;
+                    
+                    
+                }
+            }
+        }
+        .user-info-container{
+            .user-info{
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                @include breakpoint(sm){flex-direction: column; align-items: center; text-align: center;}
+                @include breakpoint(xs){flex-direction: column; align-items: center; text-align: center;}
+                .user-info-head{
+                    display: flex;
+                    align-items: center;
+                    @include breakpoint(sm){flex-direction: column; align-items: center; text-align: center;}
+                    @include breakpoint(xs){flex-direction: column; align-items: center; text-align: center;}
+                    img{
+                        background-color: #DDD;
+                        padding: 5px 5px 0 ;
+                        max-width: 60px;
+                        border-radius: 10px; 
+                        margin-right: 10px;
+                        border: 1px solid #FFF;
+                        outline: 1px solid $dark-color;
+                    }
+                    .user-info-text{
+                        padding-top: 10px;
+                    }
+                }
+                p{
+                    color: #00000080;
+                }
+            }
+        }
+    }
+}
+/*Start right content*/
+.right-content{
+    padding:30px 10px 10px 10px ;
+    .admin-info{
+        text-align: center;
+        border-bottom: 1px solid $dark-color;
+        h3{
+            padding: 10px;
+        }
+        p{
+            color:$dgold-color;
+        }
+    }
+    h4{
+        margin-top: 10px;
+    }
+    .feedbacks-box{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+        @include breakpoint(sm){flex-direction:column; align-items: center; text-align: center; margin: 40px 0;}
+        @include breakpoint(xs){flex-direction:column; align-items: center; text-align: center; margin: 40px 0;}
+        img{
+            width: 50px;
+            background-color: #DDD;
+            border-radius: 50%;
+            padding: 3px;
+            margin-right: 10px;
+        }
+        .feedbacks-title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include breakpoint(sm){flex-direction:column ;}
+            @include breakpoint(xs){flex-direction:column ;}
+        }
+        i{
+            color: brown;
+        }
+    }
+}

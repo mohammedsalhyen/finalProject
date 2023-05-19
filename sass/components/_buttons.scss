@@ -1,0 +1,9 @@
+@use "../helpers/variables"as *;
+%btn-login{
+    background-color:$golden-color;
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+}

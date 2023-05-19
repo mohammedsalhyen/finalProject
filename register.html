@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Drops Of Life</title>
+        <!--Css style-->
+        <link rel="stylesheet" href="./sass/pages/pages.css">
+        <!-- link of bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!-- Font Awesome Library -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!--Font family-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Golos+Text&family=Noto+Sans+JP&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="page d-flex">
+            <!--Start slidebar-->
+            <div class="slidebar ">
+                <a class="logo" href="./index.html"><img src="./image/logo.png" alt="logo"></a>
+                <div class=" links ">
+                    <ul >
+                        <li>
+                            <a class="active" href="./index.html">
+                                <i class="fa-solid  fa-house"></i>
+                                <p>Home</p> 
+                            </a>
+                        </li>
+                        <li>
+                            <a  href="./profile.html">
+                                <i class="fa-solid fa-user"></i>
+                                <p>Profile</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a  href="./index.html">
+                                <i class="center-i fa-solid fa-hand"></i>
+                                <p>About Us</p> 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./findBlood.html">
+                                <i class="fa-solid fa-signs-post"></i>
+                                <p>Find Blood</p>
+                            </a>
+                        </li>
+
+                        <li class="register-link position-relative">
+                            
+                            <a href="#">
+                                <i class="fa-solid fa-registered"></i>
+                                <p>Rsgister Now </p>
+                                <i class="fa-solid fa-chevron-down fa-bounce"></i>
+                                </i>
+                            </a>
+                            <ul>
+                                <li class="donor">
+                                    <i class="fa-solid fa-user"></i>
+                                    Register as Donor
+                                </li>
+                                <li class="organization">
+                                    <i class="fa-solid fa-building"></i>
+                                    Register as Organization
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--End slidebar-->
+            <div class="content">
+                <div class="heading-area">
+                    <div class="heading-group">
+                        <div class="search-input">
+                            <i class="fa-solid fa-search"></i>
+                            <input type="text" id="search" placeholder="Type the name">
+                        </div>
+                    </div>
+                    <div class="heading-group">
+                        <a href="#"><i class="fa-solid fa-bell"></i></a>
+                        <img src="./image/man.png" alt="man">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="registration-form">
+                        <h1>Register As Donor</h1>
+                        <form id="register-form">
+                            <div class="donor">
+                                <div class="row mb-4">
+                                    <div class="col-lg-2 col-sm-12"><label for="first-name">Full Name</label></div>
+                                    <div class="col-lg-5 col-sm-12">
+                                        <input type="text" id="first-name" name="first-name" placeholder="First name"  >
+                                        <div class="error-place"></div>
+                                    </div>
+                                    
+                                    <div class="col-lg-5 col-sm-12">
+                                        <input type="text" id="last-name" name="last-name" placeholder="Last name"  >
+                                        <div class="error-place"></div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-lg-2 col-sm-12"><label for="email">Email</label></div>
+                                    <div class="col-lg-10 col-sm-12">
+                                        <input type="email" id="email" name="email" placeholder="Email Address"   >
+                                        <div class="error-place"></div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-lg-2 col-sm-12"><label for="phone">Phone </label></div>
+                                    <div class="col-lg-10 col-sm-12">
+                                        <input type="text" id="phone" name="phone" placeholder="Phone Number"  >
+                                        <div class="error-place"></div>
+                                    </div>
+                                    
+                                </div>   
+                                <div class="row mb-4">
+                                    <div class="col-lg-2 col-sm-12"><label for="password">Password </label></div>
+                                    <div class="col-lg-5 col-sm-12">
+                                        <input type="password" id="password" name="password" placeholder="Your Password"  >
+                                        <div class="error-place"></div>
+                                    </div>
+                                    
+                                    <div class="col-lg-5 col-sm-12"> 
+                                        <input type="password" id="repeated-password" name="repeated-password" placeholder="Repeat your password"  >
+                                        <div class="error-place"></div>
+                                    </div>
+                                    
+                                </div> 
+                                <div class="row mb-4">
+                                    <div class="col-6 d-flex flex-sm-column flex-lg-row">
+                                        <div class="col-lg-4 col-sm-12"><label for="address">Address </label></div>
+                                        <div class="col-lg-8 col-sm-12"><textarea type="text" id="address" name="address" placeholder="Address"  ></textarea></div>
+                                    </div>
+                                    <div class="col-6 ">
+                                        <div class="row mb-4">
+                                            <div class="col-lg-3 col-sm-12"><label for="blood-type">Blood Type</label></div> 
+                                            <div class="col-lg-9 col-sm-12 ">
+                                                <select id="blood-type" name="blood-type"  >
+                                                    <option value="">--Please select your blood type--</option>
+                                                    <option value="A+">A+</option>
+                                                    <option value="A-">A-</option>
+                                                    <option value="B+">B+</option>
+                                                    <option value="B-">B-</option>
+                                                    <option value="O+">O+</option>
+                                                    <option value="O-">O-</option>
+                                                    <option value="AB+">AB+</option>
+                                                    <option value="AB-">AB-</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-4">
+                                            <div class="col-lg-3 col-sm-12"><label for="age">Age </label></div> 
+                                            <div class="col-lg-9 col-sm-12">
+                                                <input type="text" id="age" name="age" placeholder="Enter your age"  >
+                                                <div class="error-place"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-lg-3 col-sm-12"> <label for="state"> Marital Status</label></div> 
+                                            <div class="col-lg-9 col-sm-12">
+                                            <select id="state" name="state">
+                                                <option value="married">Married</option>
+                                                <option value="single">Single</option>
+                                            </select>
+                                        </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div> 
+                                <div class="row mb-4">
+                                    <div class="col-lg-2 col-sm-12 "><label for="gender">Gender</label></div>
+                                    <div class="col-lg-10 col-sm-12">
+                                        <select id="gender" name="gender"  >
+                                            <option value="">--Please select your gender--</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>    
+                                <div class="row mb-4">
+                                    <div class="col-lg-2 col-sm-12 "><label for="national-id">National ID</label></div>
+                                    <div class="col-lg-10 col-sm-12">
+                                        <input type="text" id="national-id" name="national-id"  >
+                                        <div class="error-place"></div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-lg-2 col-sm-12 "><label for="last-donation">Last Donation</label></div>
+                                    <div class="col-lg-5 col-sm-12 ">
+                                        <input type="text" id="last-donation-month" name="last-donation-month" placeholder="Month"  >
+                                        <div class="error-place"></div>
+                                    </div>
+                                    <div class="col-lg-5 col-sm-12 ">
+                                        <input type="text" id="last-donation-year" name="last-donation-year" placeholder="Year"  >
+                                        <div class="error-place"></div>
+                                    </div>
+                                </div>
+                                <div class="btn-div d-flex justify-content-end ">
+                                    <button type="submit">Register<i class="fa fa-circle-check"></i></button>
+                                </div>
+                            </div>
+                            <div class="organization">
+                                <div class="col-10">
+                                    <div class="row mt-4">
+                                        <div class="col-lg-4 col-sm-12"><label for="orgName">Organization Name</label></div>
+                                        <div class="col-lg-8 col-sm-12"><input type="text" id="orgName" name="orgName" placeholder="Organization Name"></div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-lg-4 col-sm-12"><label for="orgAddress">Organization Address</label></div>
+                                        <div class="col-lg-8 col-sm-12"><textarea type="text" id="orgAddress" name="orgAddress" placeholder="Organization Address"></textarea></div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-lg-4 col-sm-12"><label for="managerName">Head of organization</label></div>
+                                        <div class="col-lg-8 col-sm-12"><input type="text" id="managerName" name="managerName" placeholder="Name of the manager of organization"></div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-lg-4 col-sm-12"><label for="managerPhone"> Phone Number</label></div>
+                                        <div class="col-lg-8 col-sm-12"><input type="text" id="managerPhone" name="managerPhone" placeholder="Phone Number"></div>
+                                    </div>
+                                    
+                                    <div class="btn-div d-flex justify-content-end ">
+                                        <button type="submit">Register<i class="fa fa-circle-check"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="js/master.js"></script>
+        <script src="js/register.js"></script>
+    </body>
+</html>

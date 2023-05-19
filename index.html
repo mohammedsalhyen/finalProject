@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Drops Of Life</title>
+        <!--Css style-->
+        <link rel="stylesheet" href="./sass/pages/pages.css">
+        <!-- link of bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!-- Font Awesome Library -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!--Font family-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Golos+Text&family=Noto+Sans+JP&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="page d-flex position-relative">
+            <!--Start slidebar-->
+            <div class="slidebar ">
+                <a class="logo" href="./index.html"><img src="./image/logo.png" alt="logo"></a>
+                <div class=" links ">
+                    <ul >
+                        <li>
+                            <a class="active" href="#home">
+                                <i class="fa-solid  fa-house"></i>
+                                <p>Home</p> 
+                            </a>
+                        </li>
+                        <li>
+                            <a  href="./profile.html">
+                                <i class="fa-solid fa-user"></i>
+                                <p>Profile</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a  href="#about">
+                                <i class="center-i fa-solid fa-hand"></i>
+                                <p>About Us</p> 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./findBlood.html">
+                                <i class="fa-solid fa-signs-post"></i>
+                                <p>Find Blood</p>
+                            </a>
+                        </li>
+
+                        <li class="register-link position-relative">
+                            
+                            <a href="#">
+                                <i class="fa-solid fa-registered"></i>
+                                <p>Rsgister Now </p>
+                                <i class="arrow-icon fa-solid fa-chevron-down fa-bounce"></i>
+                                </i>
+                            </a>
+                            <ul>
+                                <li class="donor">
+                                    <i class="fa-solid fa-user"></i>
+                                    Register as Donor
+                                </li>
+                                <li class="organization">
+                                    <i class="fa-solid fa-building"></i>
+                                    Register as Organization
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--End slidebar-->
+            <!--Start content-->
+            <div class="content">
+                <!--Start landing-->
+                <div class="landing " id="home">
+                    <div class="heading-area">
+                        <div class="heading-group">
+                            <div class="search-input">
+                                <i class="fa-solid fa-search"></i>
+                                <input type="text" id="search" placeholder="Type the name">
+                            </div>
+                        </div>
+                        <div class="heading-group">
+                            <a href="#"><i class="fa-solid fa-bell"></i></a>
+                            <img src="./image/man.png" alt="man">
+                        </div>
+                    </div>
+                    <div class="landing-text-container">
+                        <div class=" landing-text " >
+                            <img src="./image/logo-light.png" alt="logo-light">
+                            <p class="ms-2 text-white">
+                                Welcome to our website, where you can learn about the
+                                importance of blood donation and how to contribute to saving the lives of others.
+                            </p>
+                            <div class=" btn-landing">
+                                <a><input type="button" name="find-blood" value="Find Donor"></a>
+                                <a class="register-link" href="./register.html">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End landing-->
+                <!--Start Services-->
+                <div class="Services">
+                    <div class="heading-section">
+                        <h2>Our Services</h2>
+                        <p class="text-center text-black-50 ">all You need</p>
+                    </div>
+                    <div class="service-box-container">
+                        <div class="service-box d-flex justify-content-between align-items-end" style="background-color: #198754; opacity: 0;">
+                            <div class="service-text">
+                                <h5>your Last Donate</h5>
+                                <p>here you can calculate the duration from your last donation</p>
+                            </div>
+                            <a href="#" id="calc-time" >
+                                <span>Go to service</span>
+                                <span class="icon-button">
+                                    <i class="fa-solid fa-greater-than"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="service-box d-flex justify-content-between align-items-end"   style="background-color: #ffc720; opacity: 0;">
+                            <div class="service-text">
+                                <h5>Download Report</h5>
+                                <p>Download your medical test reports now easily through our website.</p>
+                            </div>
+                            <a href="#" id="download" >
+                                <span>Go to service</span>
+                                <span class="icon-button">
+                                    <i class="fa-solid fa-greater-than"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="service-box d-flex justify-content-between align-items-end"  style="background-color: #25cff2; opacity: 0;">
+                            <div class="service-text">
+                                <h5>7 advices for Donate</h5>
+                                <p>Discover the best tips to donate blood safely and easily with 7 donation tips.</p>
+                            </div>
+                            <a href="#" id="advices" >
+                                <span>Go to service</span>
+                                <span class="icon-button">
+                                    <i class="fa-solid fa-greater-than"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--End Services-->
+                <!--Start about-->
+                <div class="about" id="about">
+                    <div class="heading-section">
+                        <h2>About Us</h2>
+                        <p class="text-center text-black-50 ">Who are we?</p>
+                    </div>
+                    <div class="container text-sm-center text-md-start text-lg-start">
+                        <p class="about-text">
+                            We are a group of Programmers. Our goal is to develop a useful and innovative
+                            solution that can benefit the community. We are passionate about technology and eager to apply our knowledge
+                            and skills to create a successful project. Our team consists of individuals from different backgrounds and 
+                            disciplines, which allows us to approach problems from diverse perspectives and come up with creative 
+                            solutions. We are dedicated to delivering a high-quality project that meets the needs of our stakeholders
+                            and makes a positive impact on society
+                        </p>
+                    </div>
+                </div>
+                <!--End about-->
+            
+                <!--Start way-to-donate-->
+                <div class="way-to-donate" id="way-to-donate">
+                    <div class="heading-section pb-3">
+                        <h2>Way to Donate </h2>
+                        <p class="text-center text-black-50 ">By donating, you will make a difference.</p>
+                    </div>
+                    <div class="row d-flex justify-content-center m-0">
+                        <div class="step-one way-box col-12 " style="opacity: 0;">
+                            <img  src="./image/Login-pana.png" alt="login-png">
+                            <h3>Register With Us</h3>
+                            <p>Register with us to unlock exclusive benefits and features.</p>
+                            <div class="step-number-holder">
+                                <p class="step-number">1</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="row steps-container d-flex justify-content-lg-around flex-sm-column flex-lg-row m-0 ">
+                        <div class="step-two way-box  col-6 " style="opacity: 0;">
+                            <img  src="./image/Curious-cuate.png" alt="login-png">
+                            <h3>Ask &amp; Donate Blood</h3>
+                            <p>Ask your friends and family to donate blood and help those in need.</p>
+                            <div class="step-number-holder">
+                                <p class="step-number">2</p>
+                            </div>
+                        </div>
+                        <div class="step-three way-box  col-6 mt-sm-4" style="opacity: 0;">
+                            <img  src="./image/Blood donation-amico.png" alt="login-png">
+                            <h3>New Life saved</h3>
+                            <p>Become a donor and help us create new life-saving opportunities.</p>
+                            <div class="step-number-holder">
+                                <p class="step-number">3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End way-to-donate-->
+                <!--Start awareness-->
+                <div class="awareness">
+                    <div class="heading-section">
+                        <h2>Awareness of blood donation</h2>
+                        <p class="text-center text-black-50 ">don't worry,you are save</p>
+                    </div>
+                    <div class="container">
+                        <div class="awareness-row row d-flex">
+                            <div class="box-container col-lg-3 col-md-6 col-sm-6  p-3">
+                                <div class="my-box">
+                                    <img class="img-fluid" src="image/awearness1.jpg" alt="Dropd of life image">
+                                    <div class="my-box-text">
+                                        <h3>What is blood donation?</h3>
+                                        <a href="#">
+                                            Read more
+                                            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="hov-div">
+                                        click and see  more information
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-container col-lg-3 col-md-6 col-sm-6 p-3 ">
+                                <div class="my-box">
+                                    <img class="img-fluid"  src="image/awearness2.jpg" alt="Dropd of life image">
+                                    <div class="my-box-text">
+                                        <h3>Health conditions for blood donation</h3>
+                                        <a href="#">
+                                            Read more
+                                            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="hov-div">
+                                        click and see  more information
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-container col-lg-3 col-md-6 col-sm-6 p-3">
+                                <div class="my-box">
+                                    <img class="img-fluid"  src="image/awearness3.png" alt="Dropd of life image">
+                                    <div class="my-box-text">
+                                        <h3>How to donate blood</h3>
+                                        <a href="#">
+                                            Read more
+                                            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="hov-div">
+                                        click and see  more information
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-container col-lg-3 col-md-6 col-sm-6 p-3">
+                                <div class="my-box">
+                                    <img class="img-fluid" src="image/awearness4.jpg" alt="Dropd of life image">
+                                    <div class="my-box-text">
+                                        <h3>Benefits of donating blood</h3>
+                                        <a href="#">
+                                            Read more
+                                            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="hov-div">
+                                        click and see  more information
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-container col-lg-3 col-md-6 col-sm-6 p-3">
+                                <div class="my-box">
+                                    <img class="img-fluid" src="image/awearness5.jpg" alt="Dropd of life image">
+                                    <div class="my-box-text">
+                                        <h3>Frequently asked questions about donating blood</h3>
+                                        <a href="#">
+                                            Read more
+                                            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="hov-div">
+                                        click and see  more information
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-container col-lg-3 col-md-6 col-sm-6 p-3">
+                                <div class="my-box">
+                                    <img class="img-fluid" src="image/awearness6.png" alt="Dropd of life image">
+                                    <div class="my-box-text">
+                                        <h3>Security procedures for blood donation</h3>
+                                        <a href="#">
+                                            Read more
+                                            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="hov-div">
+                                        click and see  more information
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End awareness-->
+                <!--Start footer-->
+                <footer>
+                    <div class="container text-sm-center text-lg-start">
+                        <div class="footer-head d-flex justify-content-between align-items-center flex-sm-column flex-lg-row">
+                            <div class="logo"><img src="./image/logo-light.png" alt="logo-light"></div>
+                            <div class="ask d-flex justify-content-between align-items-center flex-sm-column flex-lg-row">
+                                <p class="m-0">Ready to grt Started ?</p>
+                                <div class="footer-btn ms-lg-4 ms-sm-0 mt-sm-4 mt-md-2">Donate</div>
+                            </div>
+                        </div>
+                        <section class="row pt-4 ">
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="footer-box">
+                                    <h3>Send us your suggestions and feedback</h3>
+                                    <input type="text" id="feedback" placeholder="Your Massage">
+                                    <input type="submit" id="feedback-btn" value="submit">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="footer-box">
+                                    <ul>
+                                        <li><a href="#home">Home</a></li>
+                                        <li><a href="#about">About Us</a></li>
+                                        <li><a href="./findBlood.html">Find blood</a></li>
+                                        <li><a href="https://web.facebook.com/mohammed.abdelsalhyen">Contact us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="footer-box">
+                                    <ul>
+                                        <li><a href="#">our Story</a></li>
+                                        <li><a href="#">Team</a></li>
+                                        <li><a href="#">Benefits</a></li>
+                                        <li><a href="#">In future</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="footer-box">
+                                    <ul>
+                                        <li><a href="#">Help</a></li>
+                                        <li><a href="#">FAQs</a></li>
+                                        <li><a href="#">Awearness</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="footer-end d-flex justify-content-between align-items-center flex-sm-column flex-lg-row  mt-5">
+                            <div class="terms d-flex justify-content-between align-items-center">
+                                <p class="me-4">Terms &amp; conditions</p>
+                                <p>Privacy Policy</p>
+                            </div>
+                            <div class="contact-icon d-flex justify-content-between align-items-center">
+                                <a href="https://web.facebook.com/mohammed.abdelsalhyen"><i class="fa-brands fa-facebook me-3"></i></a>
+                                <a href="https://www.linkedin.com/in/mohammed-abdelsalhyen-sherief-8976441b8"><i class="fa-brands fa-linkedin me-3"></i></a>
+                                <a href="#"><i class="fa-brands fa-whatsapp me-3"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram me-3"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!--End footer-->
+            </div>
+            <!--End content-->
+        </div>
+        <script src="js/master.js"></script>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+@use "../components/components.scss" as*;
+@use "../helpers/index" as*;
+/* Start LOGIN PAGE#####################################*/
+/* #####################################*/
+/*#######################*/
+.login-form-content{
+    box-shadow:3px 2px 22px #b9b7b7 inset;
+}
+.login-form{
+    background-color:$white-color;
+    width: 450px;
+    text-align: center;
+    h1 {
+        font-size: 24px;
+        font-weight: 800;
+        color:#FFF;
+        padding: 30px;
+        background-image: linear-gradient(to bottom right,$dark-color 30% ,$main-color);
+        margin: auto;
+    }
+    input{
+        padding: 10px;
+        width: 100%;
+        border-radius: 10px;
+        
+    }
+    label{
+        @extend label;
+    }
+    button{
+        font-weight: bold;
+        font-size: 18px;
+        display: block;
+        padding: 10px 20px;
+        background-color: $dark-color;
+        color: #FFF;
+        text-align: center;
+        width: 90%;
+        position: relative;
+        margin-bottom: 60px;
+        transition: 0.3s ;
+        &:hover{
+            color: $dark-color;
+            background-color: #FFF;
+        }
+        &::after{
+            content: " ";
+            position: absolute;
+            width: 150px;
+            background-color: $dark-color;
+            height: 3px;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        &::before{
+            content: "or";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color:#FFF;
+            color: $dark-color;
+            bottom: -41px;
+            left: 50%;
+            z-index: 2;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+
+
+
+
+
+/* End LOGIN PAGE#####################################*/
+/* #####################################*/
+/*#######################*/

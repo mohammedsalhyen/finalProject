@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Drops Of Life</title>
+        <!--Css style-->
+        <link rel="stylesheet" href="./sass/pages/pages.css">
+        <!-- link of bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!-- Font Awesome Library -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!--Font family-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Golos+Text&family=Noto+Sans+JP&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    </head>
+        <div class="page d-flex">
+            <!--Start slidebar-->
+            <div class="slidebar ">
+                <a class="logo" href="./index.html"><img src="./image/logo.png" alt="logo"></a>
+                <div class=" links ">
+                    <ul >
+                        <li>
+                            <a class="active" href="./index.html">
+                                <i class="fa-solid  fa-house"></i>
+                                <p>Home</p> 
+                            </a>
+                        </li>
+                        <li>
+                            <a  href="./profile.html">
+                                <i class="fa-solid fa-user"></i>
+                                <p>Profile</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a  href="./index.html">
+                                <i class="center-i fa-solid fa-hand"></i>
+                                <p>About Us</p> 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./findBlood.html">
+                                <i class="fa-solid fa-signs-post"></i>
+                                <p>Find Blood</p>
+                            </a>
+                        </li>
+
+                        <li class="register-link position-relative">
+                            
+                            <a href="#">
+                                <i class="fa-solid fa-registered"></i>
+                                <p>Rsgister Now </p>
+                                <i class="fa-solid fa-chevron-down fa-bounce"></i>
+                                </i>
+                            </a>
+                            <ul>
+                                <li class="donor">
+                                    <i class="fa-solid fa-user"></i>
+                                    Register as Donor
+                                </li>
+                                <li class="organization">
+                                    <i class="fa-solid fa-building"></i>
+                                    Register as Organization
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--End slidebar-->
+            <div class="content">
+                <div class="heading-area">
+                    <div class="heading-group">
+                        <div class="search-input">
+                            <i class="fa-solid fa-search"></i>
+                            <input type="text" id="search" placeholder="Type the name">
+                        </div>
+                    </div>
+                    <div class="heading-group">
+                        <a href="#"><i class="fa-solid fa-bell"></i></a>
+                        <img src="./image/man.png" alt="man">
+                    </div>
+                </div>
+                <div class="container d-flex justify-content-center align-items-center mt-5 ">
+                    <div class="login-form mt-5 mb-5 ">
+                        <h1>Login Now</h1>
+                        <form class=" p-4 login-form-content">
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-12 text-start"><label for="email">Email</label></div> 
+                                <div class="col-lg-9 col-sm-12">
+                                    <input type="email" class="form-input mb-3" id="email" placeholder="Enter your Email">
+                                    <div class="error-place"></div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-lg-3 col-sm-12 mt-2 text-start"><label for="password">Password </label></div>
+                                <div class="col-lg-9 col-sm-12 mt-2">
+                                    <input type="password" class="form-input mb-3" id="password" placeholder="Enter your Password">
+                                    <div class="error-place"></div>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <button type="submit" class="my-btn col-8 mt-2">Login</button>
+                                <label>Don't have an account?</label>
+                                <a href="register.html">Register</a>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/master.js"></script>
+        <script src="js/login.js"></script>
+    </body>
+</html>
+        

@@ -1,0 +1,83 @@
+@use "../components/components.scss" as*;
+@use "../helpers/index" as*;
+/* Start Profile PAGE#####################################*/
+/* #####################################*/
+/*#######################*/
+.profile{
+    >.container{
+        background-color: #f6f6f6;
+        border-radius: 29px;
+        padding: 20px;
+    }
+    .profile-header{
+        background-color: #FFF;
+        border-radius: 10px;
+        @include breakpoint(xs){@include centering-flex; flex-direction: column;}
+        .left-profile-content{
+            @include breakpoint(xs){@include centering-flex; flex-direction: column; min-width: 100%; }
+            h2{
+                @include breakpoint(xs){align-self: center; padding: 10px;}
+            }
+        }
+        img{
+            max-width: 110px;
+            padding: 4px;
+            background-color: #f6f6f6;
+            border-radius: 15px;
+            border: 3px solid #eee;
+            @include breakpoint(xs){align-self: center;}
+        }
+        i{
+            font-size: 24px;
+            color: #909090;
+            @include breakpoint(xs){display: none;}
+        }
+        .right-profile-content{
+            @include breakpoint(xs){width: 100%;}
+        }
+        input{
+            color: #fff;
+            background-color:$dark-color;
+            border: none;
+            box-shadow: 0px 0px 18px #c3c0c0;
+            padding: 10px;
+            border-radius: 5px;
+            margin-left: 20px;
+            @include breakpoint(xs){align-self:center;}
+            
+            
+        }
+    }
+    .profile-about{
+        background-color: #FFF;
+        border-radius: 10px;
+        h3{
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+            
+            li{
+                @include breakpoint(xs){flex-direction: column; text-align: center;}
+                border-bottom: 2px solid #eeeeee;
+                padding-top: 10px;
+                p{
+                    padding-left: 10%;
+                    @include breakpoint(xs){padding-left: 0%;}
+                    font-size: 20px;
+                    color: $dark-color;
+                }
+                span{
+                    padding-right: 10%;
+                    font-size: 20px;
+                    color:$golden-color;
+                    @include breakpoint(xs){padding-right: 0%;}
+                }
+            }
+        }
+        
+    }
+    .donate-history{
+        @extend .profile-about
+    }
+}
